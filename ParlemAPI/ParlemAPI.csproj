@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ParlemWebApi.Domain\ParlemWebApi.Domain.csproj" />
+    <ProjectReference Include="..\ParlemWebApi.Infrastructure\ParlemWebApi.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

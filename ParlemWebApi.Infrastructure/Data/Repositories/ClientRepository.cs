@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ParlemApi.Infrastructure.Data.Repositories
 {
-    public class EmployeeRepository : IRepository
+    public class ClientRepository : IRepository
     {
         #region Class variables/properties
 
@@ -17,7 +17,7 @@ namespace ParlemApi.Infrastructure.Data.Repositories
 
         #endregion
 
-        public EmployeeRepository() : base()
+        public ClientRepository() : base()
         {
             if (File.Exists(Directory.GetCurrentDirectory() + "ConnectionString.txt"))
             {

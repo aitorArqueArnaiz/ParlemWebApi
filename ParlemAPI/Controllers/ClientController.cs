@@ -29,6 +29,8 @@ namespace parlemWebApi.Controllers
 
         #endregion
 
+        #region Controller Endpoints
+
         [HttpPost]
         [Route("AddProduct")]
         public ActionResult<AddClientResponse> AddProduct([FromBody] AddClientRequest client)
@@ -46,13 +48,15 @@ namespace parlemWebApi.Controllers
                     ID = client.ID,
                     Phone = client.Phone
                 };
-                var response = _clientService.AddClient(entitClient);
+                var response = _clientService.AddClientByAsync(entitClient);
                 return Ok(response);
             }
-            catch(Exception error)
+            catch (Exception error)
             {
                 throw new Exception($"Error adding product with id {null}. Exception message is : {error.Message}");
             }
         }
+
+        #endregion
     }
 }

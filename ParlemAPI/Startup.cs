@@ -5,6 +5,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using ParlemApi.Infrastructure.Data.Repositories;
+using ParlemWebApi.Domain.Interfaces;
+using ParlemWebApi.Domain.Services;
 
 namespace parlemWebApi
 {
@@ -38,7 +41,7 @@ namespace parlemWebApi
             services.AddLogging(configure => configure.AddConsole());
 
             // Add application services.
-            //services.Add(new ServiceDescriptor(typeof(IEmployeeService), new EmployeeService(new EmployeeRepository())));
+            services.Add(new ServiceDescriptor(typeof(IClientService), new ClientService(new ClientRepository())));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

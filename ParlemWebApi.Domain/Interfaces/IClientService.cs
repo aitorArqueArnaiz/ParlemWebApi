@@ -1,5 +1,6 @@
 ﻿using ParlemWebApi.Domain.Entities;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace ParlemWebApi.Domain.Interfaces
 {
@@ -10,7 +11,7 @@ namespace ParlemWebApi.Domain.Interfaces
         /// </summary>
         /// <param name="client"></param>
         /// <returns></returns>
-        bool AddClient(Client client);
+        Task AddClientByAsync(Client client);
 
         /// <summary>
         /// Method for get a client with the given customer Id.
