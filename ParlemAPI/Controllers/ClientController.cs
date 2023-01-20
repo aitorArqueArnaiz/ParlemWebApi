@@ -4,6 +4,7 @@ using ParlemWebApi.Domain.DTOs.Clients;
 using ParlemWebApi.Domain.Entities;
 using ParlemWebApi.Domain.Interfaces;
 using System;
+using System.Threading.Tasks;
 
 namespace parlemWebApi.Controllers
 {
@@ -33,7 +34,7 @@ namespace parlemWebApi.Controllers
 
         [HttpPost]
         [Route("AddProduct")]
-        public ActionResult<AddClientResponse> AddProduct([FromBody] AddClientRequest client)
+        public async Task<IActionResult> AddProduct([FromBody] AddClientRequest client)
         {
             try
             {
@@ -48,8 +49,8 @@ namespace parlemWebApi.Controllers
                     ID = client.ID,
                     Phone = client.Phone
                 };
-                var response = _clientService.AddClientByAsync(entitClient);
-                return Ok(response);
+                await _clientService.AddClientByAsync(entitClient);
+                return Ok(new AddClientResponse { IsValid = true, CustomerId = entitClient.CustomerId });
             }
             catch (Exception error)
             {
