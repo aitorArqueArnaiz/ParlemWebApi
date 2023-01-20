@@ -1,0 +1,1 @@
+﻿Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=Parlem;Integrated Security=true;

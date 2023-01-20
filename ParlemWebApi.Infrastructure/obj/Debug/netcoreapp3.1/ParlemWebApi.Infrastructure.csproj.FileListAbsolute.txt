@@ -1,0 +1,9 @@
+C:\Users\aitor\Downloads\ParlemWebApi.Infrastructure\bin\Debug\netcoreapp3.1\ParlemWebApi.Infrastructure.deps.json
+C:\Users\aitor\Downloads\ParlemWebApi.Infrastructure\bin\Debug\netcoreapp3.1\ParlemWebApi.Infrastructure.dll
+C:\Users\aitor\Downloads\ParlemWebApi.Infrastructure\bin\Debug\netcoreapp3.1\ParlemWebApi.Infrastructure.pdb
+C:\Users\aitor\Downloads\ParlemWebApi.Infrastructure\obj\Debug\netcoreapp3.1\ParlemWebApi.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aitor\Downloads\ParlemWebApi.Infrastructure\obj\Debug\netcoreapp3.1\ParlemWebApi.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\aitor\Downloads\ParlemWebApi.Infrastructure\obj\Debug\netcoreapp3.1\ParlemWebApi.Infrastructure.AssemblyInfo.cs
+C:\Users\aitor\Downloads\ParlemWebApi.Infrastructure\obj\Debug\netcoreapp3.1\ParlemWebApi.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\aitor\Downloads\ParlemWebApi.Infrastructure\obj\Debug\netcoreapp3.1\ParlemWebApi.Infrastructure.dll
+C:\Users\aitor\Downloads\ParlemWebApi.Infrastructure\obj\Debug\netcoreapp3.1\ParlemWebApi.Infrastructure.pdb
