@@ -20,3 +20,15 @@ C:\Users\aitor\Downloads\ParlemWebApi\ParlemWebApi.Infrastructure\obj\Debug\net5
 C:\Users\aitor\Downloads\ParlemWebApi\ParlemWebApi.Infrastructure\obj\Debug\net5.0\ParlemWebApi.Infrastructure.dll
 C:\Users\aitor\Downloads\ParlemWebApi\ParlemWebApi.Infrastructure\obj\Debug\net5.0\ref\ParlemWebApi.Infrastructure.dll
 C:\Users\aitor\Downloads\ParlemWebApi\ParlemWebApi.Infrastructure\obj\Debug\net5.0\ParlemWebApi.Infrastructure.pdb
+C:\Users\aitor\Downloads\ParlemAPI\ParlemWebApi.Infrastructure\bin\Debug\net5.0\ParlemWebApi.Infrastructure.deps.json
+C:\Users\aitor\Downloads\ParlemAPI\ParlemWebApi.Infrastructure\bin\Debug\net5.0\ParlemWebApi.Infrastructure.dll
+C:\Users\aitor\Downloads\ParlemAPI\ParlemWebApi.Infrastructure\bin\Debug\net5.0\ref\ParlemWebApi.Infrastructure.dll
+C:\Users\aitor\Downloads\ParlemAPI\ParlemWebApi.Infrastructure\bin\Debug\net5.0\ParlemWebApi.Infrastructure.pdb
+C:\Users\aitor\Downloads\ParlemAPI\ParlemWebApi.Infrastructure\obj\Debug\net5.0\ParlemWebApi.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\aitor\Downloads\ParlemAPI\ParlemWebApi.Infrastructure\obj\Debug\net5.0\ParlemWebApi.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aitor\Downloads\ParlemAPI\ParlemWebApi.Infrastructure\obj\Debug\net5.0\ParlemWebApi.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\aitor\Downloads\ParlemAPI\ParlemWebApi.Infrastructure\obj\Debug\net5.0\ParlemWebApi.Infrastructure.AssemblyInfo.cs
+C:\Users\aitor\Downloads\ParlemAPI\ParlemWebApi.Infrastructure\obj\Debug\net5.0\ParlemWebApi.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\aitor\Downloads\ParlemAPI\ParlemWebApi.Infrastructure\obj\Debug\net5.0\ParlemWebApi.Infrastructure.dll
+C:\Users\aitor\Downloads\ParlemAPI\ParlemWebApi.Infrastructure\obj\Debug\net5.0\ref\ParlemWebApi.Infrastructure.dll
+C:\Users\aitor\Downloads\ParlemAPI\ParlemWebApi.Infrastructure\obj\Debug\net5.0\ParlemWebApi.Infrastructure.pdb

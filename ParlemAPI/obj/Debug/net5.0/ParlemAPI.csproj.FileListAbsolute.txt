@@ -29,3 +29,4 @@ C:\Users\aitor\Downloads\ParlemAPI\ParlemAPI\obj\Debug\net5.0\ParlemAPI.dll
 C:\Users\aitor\Downloads\ParlemAPI\ParlemAPI\obj\Debug\net5.0\ref\ParlemAPI.dll
 C:\Users\aitor\Downloads\ParlemAPI\ParlemAPI\obj\Debug\net5.0\ParlemAPI.pdb
 C:\Users\aitor\Downloads\ParlemAPI\ParlemAPI\obj\Debug\net5.0\ParlemAPI.genruntimeconfig.cache
+C:\Users\aitor\Downloads\ParlemAPI\ParlemAPI\bin\Debug\net5.0\Newtonsoft.Json.dll

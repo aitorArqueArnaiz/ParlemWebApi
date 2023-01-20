@@ -1,8 +1,8 @@
 ﻿
-
 namespace ParlemWebApi.Domain.Base
 {
-    public class baseEntity
+    public class BaseEntity
     {
+        public int ID { get; set; }
     }
 }

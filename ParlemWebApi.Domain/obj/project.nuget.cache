@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "X24Dg0L2AnthS1DElpWM/+cQAbbhcMFX2h03n6y5wsQIRtfoh1U4b672a2FqvVpiqRbcq5HycywBFhErP9mI2Q==",
+  "dgSpecHash": "JSlL2B2tNxpaizSU+wrlusXk8nLP1X+HaGI2XE0xcog4ixgATY7zJm+zNifPAsXoS8WY7eODPj6XQyXjc+f8ww==",
   "success": true,
   "projectFilePath": "C:\\Users\\aitor\\Downloads\\ParlemAPI\\ParlemWebApi.Domain\\ParlemWebApi.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\aitor\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512"
+  ],
   "logs": []
 }

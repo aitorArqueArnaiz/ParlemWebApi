@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using ParlemWebApi.Domain.DTOs.Clients;
+using System;
 
 namespace parlemWebApi.Controllers
 {
@@ -24,9 +25,16 @@ namespace parlemWebApi.Controllers
         #endregion
 
         [HttpPost]
-        public ActionResult<AddClientRequest> AddItem([FromBody] AddClientResponse client)
+        public ActionResult<AddClientRequest> AddProduct([FromBody] AddClientResponse client)
         {
-            return NotFound();
+            try
+            {
+                return Ok();
+            }
+            catch(Exception error)
+            {
+                throw new Exception($"Error adding product with id {null}");
+            }
         }
     }
 }
