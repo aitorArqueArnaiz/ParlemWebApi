@@ -42,6 +42,7 @@ namespace parlemWebApi
 
             // Add application services.
             services.Add(new ServiceDescriptor(typeof(IClientService), new ClientService(new ClientRepository())));
+            services.Add(new ServiceDescriptor(typeof(IProductService), new ProductService(new ProductRepository())));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
