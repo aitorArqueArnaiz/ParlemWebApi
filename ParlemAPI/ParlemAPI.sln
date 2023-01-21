@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.33130.400
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParlemAPI", "ParlemAPI.csproj", "{980AF189-CE4B-497E-B639-383FE0E20113}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParlemAPI", "ParlemAPI.csproj", "{980AF189-CE4B-497E-B639-383FE0E20113}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParlemWebApi.Domain", "..\ParlemWebApi.Domain\ParlemWebApi.Domain.csproj", "{7BABB4BD-06EE-4956-A890-3D1D6A1B1856}"
 EndProject
@@ -14,6 +14,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D1ED5EE0-C04E-492F-9A3A-E436234D86E4}"
 	ProjectSection(SolutionItems) = preProject
 		..\DDD And steps for implemetation.doc = ..\DDD And steps for implemetation.doc
+		Parlem.mdf = Parlem.mdf
+		Parlem_log.ldf = Parlem_log.ldf
 		..\ParlemAPIConnectionString.txt = ..\ParlemAPIConnectionString.txt
 		..\README.md = ..\README.md
 	EndProjectSection
