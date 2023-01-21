@@ -4,6 +4,7 @@ using ParlemWebApi.Domain.DTOs.Clients;
 using ParlemWebApi.Domain.DTOs.Productes;
 using ParlemWebApi.Domain.Entities;
 using ParlemWebApi.Domain.Interfaces;
+using ParlemWebApi.Domain.Shared;
 using System;
 using System.Threading.Tasks;
 
@@ -45,7 +46,7 @@ namespace parlemWebApi.Controllers
                     ID = request.ID,
                     NumeracioTerminal = request.NumeracioTerminal,
                     ProductName = request.ProductName,
-                    ProductTypeName = request.ProductTypeName,
+                    ProductTypeName = Enum.GetName(typeof(ProductTypeNameEnum) ,request.ProductTypeName),
                     SoldAt = request.SoldAt
                 };
                 await _productService.AddProductByAsync(entitProducte);
@@ -64,8 +65,8 @@ namespace parlemWebApi.Controllers
             if (id == null) return NotFound();
             try
             {
-                var client = _productService.GetProduct(id);
-                return Ok(new GetClientResponse() {  });
+                var producte = _productService.GetProduct(id);
+                return Ok(new GetProductResponse() {  Product = producte });
             }
             catch (Exception error)
             {
@@ -79,8 +80,8 @@ namespace parlemWebApi.Controllers
         {
             try
             {
-                var clients = _productService.GetAllProducts();
-                return Ok(new GetAllClientsResponse() {  });
+                var products = _productService.GetAllProducts();
+                return Ok(new GetAllProductsResponse() { Products = products  });
             }
             catch (Exception error)
             {

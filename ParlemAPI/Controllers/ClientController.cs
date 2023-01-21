@@ -56,7 +56,7 @@ namespace parlemWebApi.Controllers
             }
             catch (Exception error)
             {
-                throw new Exception($"Error adding product with id {null}. Exception message is : {error.Message}");
+                throw new Exception($"Error adding client with id {null}. Exception message is : {error.Message}");
             }
         }
 
@@ -72,7 +72,7 @@ namespace parlemWebApi.Controllers
             }
             catch (Exception error)
             {
-                throw new Exception($"Error getting product with id {null}. Exception message is : {error.Message}");
+                throw new Exception($"Error getting client with id {null}. Exception message is : {error.Message}");
             }
         }
 
@@ -87,7 +87,7 @@ namespace parlemWebApi.Controllers
             }
             catch (Exception error)
             {
-                throw new Exception($"Error getting all existing products with id {null}. Exception message is : {error.Message}");
+                throw new Exception($"Error getting all existing clients with id {null}. Exception message is : {error.Message}");
             }
         }
 
