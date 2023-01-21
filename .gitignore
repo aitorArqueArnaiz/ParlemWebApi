@@ -1,0 +1,5 @@
+# Compiled Object files
+*.bin
+*.obj
+/bin
+/obj

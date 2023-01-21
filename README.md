@@ -10,13 +10,27 @@ Domain-Driven-Developement
 4. Create Unit Testing for basic flows (add, get, update and delete)
 5. Unit Testing
 
-
-How to test the project : Run it with IIS Express in local machine
+Developed : Visual Studio 2019 Professional y Base de dades SQL Server.
+How to test the project : Run it with IIS Express in local machine.
 
 Data Base :
 	MDF file in solution items folder with already some data created. Attach it to your local machine SQLServer with SQl Management Studio
 
-ENDPOINTS
+Endpoints :
+
+Es pot testejar amb un Postman o el que jo proposo es probar amb el swagger (per això l'he picat).
+
+	Clients :
+	- GetAllClients : Obtenir totts els clients.
+	- GetClientById : btenir un client per customerId.
+	- AddClient :Afeguir un nou client.
+	- GetClientProducts : Obtenir els productes d'un client.'
+	
+	Productes :
+	- GetAllProducts : Obtenir tots el productes.
+	- GetProductById : Obtenir un producte per id.
+	- Addproduct : Afeguir un nou producte.
+
 
 En cas que el projecte creixi molt , m'agrada dividir el domini en dues capes :
 
