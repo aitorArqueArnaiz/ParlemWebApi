@@ -68,9 +68,9 @@ namespace ParlemApi.Infrastructure.Data.Repositories
         /// <param name="record">The row reader record.</param>
         private string ReadSingleRow(IDataRecord record)
         {
-            return string.Format("{0}, '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', {8}, {9}, {10}, '{11}', '{12}', '{13}'",
-                record.GetInt32(0), record.GetString(1), record.GetString(2), record.GetString(3), record.GetString(4), record.GetString(5), record.GetString(6), record.GetString(7),
-                record.GetInt32(8), record.GetInt32(9), record.GetInt32(10), record.GetString(11), record.GetString(12), record.GetString(13));
+            return string.Format("{0}, '{1}', '{2}', '{3}', {4}, '{5}', '{6}', '{7}'",
+                record.GetInt32(0), record.GetString(1), record.GetString(2), record.GetString(3),
+                record.GetInt32(4), record.GetString(5), record.GetString(6), record.GetString(7));
         }
 
         /// <summary>This method executes an sql query.</summary>

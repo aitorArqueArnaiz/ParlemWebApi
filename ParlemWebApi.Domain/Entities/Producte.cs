@@ -1,5 +1,4 @@
 ﻿using ParlemWebApi.Domain.Base;
-using ParlemWebApi.Domain.Shared;
 
 namespace ParlemWebApi.Domain.Entities
 {
@@ -16,7 +15,7 @@ namespace ParlemWebApi.Domain.Entities
     public class  Producte : BaseEntity
     {
         public string ProductName { get; set; }
-        public ProductTypeNameEnum ProductTypeName { get; set; }
+        public string ProductTypeName { get; set; }
         public string NumeracioTerminal { get; set; }
         public string SoldAt { get; set; }
         public int CustomerId { get; set; }

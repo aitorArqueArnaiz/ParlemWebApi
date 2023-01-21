@@ -18,12 +18,18 @@ namespace ParlemWebApi.Domain.Interfaces
         /// </summary>
         /// <param name="customerId"></param>
         /// <returns></returns>
-        Client GetClient(int customerId);
+        Client GetClient(int? customerId);
 
         /// <summary>
         /// Method for getting all the existing clients.
         /// </summary>
         /// <returns></returns>
         IEnumerable<Client> GetAllClients();
+
+        /// <summary>
+        /// Method for getting all the existing client products.
+        /// </summary>
+        /// <returns></returns>
+        ClientProductes GetAllClientProducts(int? customerId);
     }
 }
