@@ -29,7 +29,13 @@ namespace ParlemWebApi.UnitTest
 
             // SetUp repository Mocks
             _productRespository.Setup(x => x.ListAsync(It.IsAny<string>()))
-                .Returns(new List<string>() { "123456", "nameTest", "typeTest", "numeracioTerminalTest", "soldAttest", "5454458" });
+                .Returns(new List<string>() { "3553525, 'string', 'Fresh', 543646, '20/12/2022', 123456" });
+
+            _clientRespository.Setup(x => x.ListAsync(It.IsAny<string>()))
+                .Returns(new List<string>() { "3553525, 'string', 'Fresh', 543646, '20/12/2022', 123456" });
+
+            _clientRespository.Setup(x => x.GetAsync(It.IsAny<string>()))
+                .Returns("123456, nameTest, typeTest, numeracioTerminalTest, soldAttest, 5454458");
 
             _clientService = new ClientService(_clientRespository.Object, _productRespository.Object);
         }
@@ -45,6 +51,7 @@ namespace ParlemWebApi.UnitTest
         #region Tests
 
         [TestCase(Description = "Test intended to check the client service for obtaining all the client products.")]
+        [Author("Aitor Arqué Arnaiz")]
         public void ReturnAllProductsFromClient()
         {
             // Arrange
@@ -54,7 +61,77 @@ namespace ParlemWebApi.UnitTest
             var response = _clientService.GetAllClientProducts(customerId);
 
             // Assert
-            response.Products.Should().NotBeEmpty();            
+            response.Products.Should().NotBeEmpty();
+            response.Products.Should().HaveCount(1);
+        }
+
+        [TestCase(Description = "Test intended to check the client service for obtaining clients.")]
+        [Author("Aitor Arqué Arnaiz")]
+        public void ReturnAllClients()
+        {
+            // Arrange
+
+            // Act
+            var response = _clientService.GetAllClients();
+
+            // Assert
+            response.Should().NotBeEmpty();
+            response.Should().HaveCount(1);
+        }
+
+        [TestCase(Description = "Test intended to check the client service for obtaining client by Id.")]
+        [Author("Aitor Arqué Arnaiz")]
+        public void ReturnClientById()
+        {
+            // Arrange
+
+            // Act
+
+            // Assert
+        }
+
+        [TestCase(Description = "Test intended to check the client service for Add a new client.")]
+        [Author("Aitor Arqué Arnaiz")]
+        public void CreateNewClient()
+        {
+            // Arrange
+
+            // Act
+
+            // Assert
+        }
+
+        [TestCase(Description = "Test intended to check the client service for obtaining product by Id.")]
+        [Author("Aitor Arqué Arnaiz")]
+        public void ReturnProductById()
+        {
+            // Arrange
+
+            // Act
+
+            // Assert
+        }
+
+        [TestCase(Description = "Test intended to check the client service for obtaining all products.")]
+        [Author("Aitor Arqué Arnaiz")]
+        public void ReturnAllProducts()
+        {
+            // Arrange
+
+            // Act
+
+            // Assert
+        }
+
+        [TestCase(Description = "Test intended to check the client service for add a new product.")]
+        [Author("Aitor Arqué Arnaiz")]
+        public void AddNewProduct()
+        {
+            // Arrange
+
+            // Act
+
+            // Assert
         }
 
         #endregion

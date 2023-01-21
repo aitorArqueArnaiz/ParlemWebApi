@@ -1,0 +1,11 @@
+C:\Users\aitor\OneDrive\Escritorio\ParlemWebApi\ParlemWebApi.Infrastructure\bin\Debug\net5.0\ParlemWebApi.Infrastructure.deps.json
+C:\Users\aitor\OneDrive\Escritorio\ParlemWebApi\ParlemWebApi.Infrastructure\bin\Debug\net5.0\ParlemWebApi.Infrastructure.dll
+C:\Users\aitor\OneDrive\Escritorio\ParlemWebApi\ParlemWebApi.Infrastructure\bin\Debug\net5.0\ref\ParlemWebApi.Infrastructure.dll
+C:\Users\aitor\OneDrive\Escritorio\ParlemWebApi\ParlemWebApi.Infrastructure\bin\Debug\net5.0\ParlemWebApi.Infrastructure.pdb
+C:\Users\aitor\OneDrive\Escritorio\ParlemWebApi\ParlemWebApi.Infrastructure\obj\Debug\net5.0\ParlemWebApi.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aitor\OneDrive\Escritorio\ParlemWebApi\ParlemWebApi.Infrastructure\obj\Debug\net5.0\ParlemWebApi.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\aitor\OneDrive\Escritorio\ParlemWebApi\ParlemWebApi.Infrastructure\obj\Debug\net5.0\ParlemWebApi.Infrastructure.AssemblyInfo.cs
+C:\Users\aitor\OneDrive\Escritorio\ParlemWebApi\ParlemWebApi.Infrastructure\obj\Debug\net5.0\ParlemWebApi.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\aitor\OneDrive\Escritorio\ParlemWebApi\ParlemWebApi.Infrastructure\obj\Debug\net5.0\ParlemWebApi.Infrastructure.dll
+C:\Users\aitor\OneDrive\Escritorio\ParlemWebApi\ParlemWebApi.Infrastructure\obj\Debug\net5.0\ref\ParlemWebApi.Infrastructure.dll
+C:\Users\aitor\OneDrive\Escritorio\ParlemWebApi\ParlemWebApi.Infrastructure\obj\Debug\net5.0\ParlemWebApi.Infrastructure.pdb
