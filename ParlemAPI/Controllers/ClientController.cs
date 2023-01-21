@@ -5,6 +5,7 @@ using ParlemWebApi.Domain.Entities;
 using ParlemWebApi.Domain.Interfaces;
 using ParlemWebApi.Domain.Shared;
 using System;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace parlemWebApi.Controllers
@@ -71,7 +72,22 @@ namespace parlemWebApi.Controllers
             }
             catch (Exception error)
             {
-                throw new Exception($"Error adding product with id {null}. Exception message is : {error.Message}");
+                throw new Exception($"Error getting product with id {null}. Exception message is : {error.Message}");
+            }
+        }
+
+        [HttpGet]
+        [Route("GetAllClients")]
+        public async Task<IActionResult> GetAllClients()
+        {
+            try
+            {
+                var clients = _clientService.GetAllClients();
+                return Ok(new GetAllClientsResponse() { Clients = clients });
+            }
+            catch (Exception error)
+            {
+                throw new Exception($"Error getting all existing products with id {null}. Exception message is : {error.Message}");
             }
         }
 
