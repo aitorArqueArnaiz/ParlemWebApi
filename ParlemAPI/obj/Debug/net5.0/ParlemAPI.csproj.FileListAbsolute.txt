@@ -28,7 +28,6 @@ C:\Users\aitor\Downloads\ParlemAPI\ParlemAPI\obj\Debug\net5.0\ParlemAPI.Generate
 C:\Users\aitor\Downloads\ParlemAPI\ParlemAPI\obj\Debug\net5.0\ParlemAPI.AssemblyInfoInputs.cache
 C:\Users\aitor\Downloads\ParlemAPI\ParlemAPI\obj\Debug\net5.0\ParlemAPI.AssemblyInfo.cs
 C:\Users\aitor\Downloads\ParlemAPI\ParlemAPI\obj\Debug\net5.0\ParlemAPI.csproj.CoreCompileInputs.cache
-C:\Users\aitor\Downloads\ParlemAPI\ParlemAPI\obj\Debug\net5.0\ParlemAPI.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\aitor\Downloads\ParlemAPI\ParlemAPI\obj\Debug\net5.0\ParlemAPI.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\aitor\Downloads\ParlemAPI\ParlemAPI\obj\Debug\net5.0\scopedcss\bundle\ParlemAPI.styles.css
 C:\Users\aitor\Downloads\ParlemAPI\ParlemAPI\obj\Debug\net5.0\staticwebassets\ParlemAPI.StaticWebAssets.Manifest.cache

@@ -41,7 +41,7 @@ namespace parlemWebApi
             services.AddLogging(configure => configure.AddConsole());
 
             // Add application services.
-            services.Add(new ServiceDescriptor(typeof(IClientService), new ClientService(new ClientRepository())));
+            services.Add(new ServiceDescriptor(typeof(IClientService), new ClientService(new ClientRepository(), new ProductRepository())));
             services.Add(new ServiceDescriptor(typeof(IProductService), new ProductService(new ProductRepository())));
         }
 

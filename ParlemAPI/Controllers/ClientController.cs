@@ -5,7 +5,6 @@ using ParlemWebApi.Domain.Entities;
 using ParlemWebApi.Domain.Interfaces;
 using ParlemWebApi.Domain.Shared;
 using System;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace parlemWebApi.Controllers
@@ -84,6 +83,21 @@ namespace parlemWebApi.Controllers
             {
                 var clients = _clientService.GetAllClients();
                 return Ok(new GetAllClientsResponse() { Clients = clients });
+            }
+            catch (Exception error)
+            {
+                throw new Exception($"Error getting all existing clients with id {null}. Exception message is : {error.Message}");
+            }
+        }
+
+        [HttpGet]
+        [Route("GetAllClientProducts")]
+        public async Task<IActionResult> GetAllClientProducts(int? customerId)
+        {
+            try
+            {
+                var clientProducts = _clientService.GetAllClientProducts(customerId);
+                return Ok(new GetClientProductsResponse() { ClientProducts = clientProducts });
             }
             catch (Exception error)
             {
