@@ -3,6 +3,7 @@ using Microsoft.Extensions.Logging;
 using ParlemWebApi.Domain.DTOs.Clients;
 using ParlemWebApi.Domain.Entities;
 using ParlemWebApi.Domain.Interfaces;
+using ParlemWebApi.Domain.Shared;
 using System;
 using System.Threading.Tasks;
 
@@ -33,24 +34,40 @@ namespace parlemWebApi.Controllers
         #region Controller Endpoints
 
         [HttpPost]
-        [Route("AddProduct")]
-        public async Task<IActionResult> AddProduct([FromBody] AddClientRequest client)
+        [Route("AddClient")]
+        public async Task<IActionResult> AddClient([FromBody] AddClientRequest request)
         {
             try
             {
                 var entitClient = new Client()
                 {
-                    CustomerId = client.CustomerId,
-                    DocNum = client.DocNum,
-                    DocType = client.DocType,
-                    Email = client.Email,
-                    FamilyName1 = client.FamilyName1,
-                    GivenName = client.GivenName,
-                    ID = client.ID,
-                    Phone = client.Phone
+                    CustomerId = request.CustomerId,
+                    DocNum = request.DocNum,
+                    DocType = Enum.GetName(typeof(DocTypeEnum) ,request.DocType),
+                    Email = request.Email,
+                    FamilyName1 = request.FamilyName1,
+                    GivenName = request.GivenName,
+                    ID = request.ID,
+                    Phone = request.Phone
                 };
                 await _clientService.AddClientByAsync(entitClient);
                 return Ok(new AddClientResponse { IsValid = true, CustomerId = entitClient.CustomerId });
+            }
+            catch (Exception error)
+            {
+                throw new Exception($"Error adding product with id {null}. Exception message is : {error.Message}");
+            }
+        }
+
+        [HttpGet]
+        [Route("GetClient")]
+        public async Task<IActionResult> GetClient(int id)
+        {
+            if (id == null) return NotFound();
+            try
+            {
+                var client = _clientService.GetClient(id);
+                return Ok(new GetClientResponse() { Client = client });
             }
             catch (Exception error)
             {
